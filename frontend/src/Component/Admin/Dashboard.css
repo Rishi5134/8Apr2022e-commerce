@@ -1,0 +1,130 @@
+.paginationBox{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.element.style{
+    display: flex;
+}
+table {
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+  }
+  
+  
+  table tr {
+    /* background-color: #f8f8f8; */
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    text-transform: uppercase;
+  }
+  
+@media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+  
+.dashSearch:focus{
+    outline: none;
+    border: 2px solid rgb(201, 79, 233);
+    box-shadow: 2px 2px 7px rgb(201, 79, 233);
+}
+.dashSearch{
+    padding: 3px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: 0.2s all;
+    width: 11rem;
+    height: 35px;
+    letter-spacing: 1px;
+    font-family:'Roboto';
+    border: 1px solid rgb(157, 59, 182);
+}
+.AdminSearchBox{
+  position: absolute;
+    display: flex;
+    /* align-items: center; */
+    float: left;
+    flex-direction: column;
+    margin-right: 7rem;
+    /* margin-bottom: 1rem; */
+    width: max-content;
+}
+.admin-category-link{
+ margin: 7px;
+ list-style: none;
+ padding: 2px 7px;
+ width: 7rem;
+}
+.admin-category-link:hover{
+  color: white;
+  background-color: rgb(157, 59, 182) ;
+  cursor: pointer;
+}
+.table-data{
+  /* margin: 0rem; */
+  margin-left: 13rem;
+  width: 83vw !important;
+  margin-top: 27px;
+}
+.paginationBox{
+  margin: 0%;
+}
+.dashbord{
+  min-height: 50vh;
+}

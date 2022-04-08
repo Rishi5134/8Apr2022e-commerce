@@ -1,0 +1,99 @@
+.updateProfileImagePreview{
+    width: 80% !important ;
+    border-radius: 100%;
+    height: 60vh;
+    transition: 0.5s all;
+    margin: 2rem 0rem;
+}
+.updateProfileImagePreview:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.updateProfileImagePreview:hover + .changeImageIcon{
+    display: block !important;
+}
+.changeImageIcon{
+    position: absolute;
+    transform: scale(2.5);
+    display: none !important;
+}
+.updateProfileForm{
+    display: flex;
+}
+
+.updateProfileImageInput{
+    transform: translateX(-50%);
+    position: absolute;
+    top: 50%;
+
+}
+#updateProfileImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#avatarChange {
+ display: none;
+}
+.updateProfileBlock-1{
+    width: 40%;
+    margin: 5% 10%;
+}
+.updateProfileBlock-2{
+    width: 40%;
+    margin: 10rem 2rem;
+    /* margin: 5rem 2rem; */
+}
+.changeImageIcon:hover{
+    cursor: pointer !important;
+}
+.updateProfileBlock-1 > hr{
+    width: 100%;
+  border: 2px solid rgb(114, 6, 141);
+  opacity: 0.7;
+  border-radius: 50px;
+}
+.updateProfileBlock-1 > h2{
+    
+  font-family: "Sora";
+}
+.updateProfileName, .updateProfileEmail{
+    margin: 15px 0px;
+}
+.updateProfileName > input, .updateProfileEmail > input{
+    outline: none;
+    width: 20rem;
+    height: 40px;
+    padding: 0px 40px 0px 10px;
+    transition: 0.3s all;
+}
+.editIcon{
+    transform: translateX(-2rem);
+    opacity: 0.8;
+}
+.updateProfileName > input:focus, .updateProfileEmail > input:focus{
+ 
+
+box-shadow: 3px 3px 5px rgb(114, 6, 141);
+}
+.updateProfileBlock-2 > input{
+    color: white;
+    width: max-content;
+    text-align: center;
+    margin: 1rem 0rem;
+    padding: 5px 100px;
+    background-color: rgba(212, 68, 11, 0.897);
+    text-decoration: none;
+    border: 2px solid rgba(212, 68, 11, 0.897);
+    transition: 0.5s all;
+    /* border-radius:20px; */
+    font-size: 18px;
+}
+.updateProfileBlock-2 >input:hover{
+    background-color: rgba(161, 56, 15, 0.897);
+    text-decoration: none;
+    color: white;
+    border-radius: 0px;
+    box-shadow: 3px 3px 15px rgba(161, 56, 15, 0.897);
+    cursor: pointer;
+}

@@ -1,0 +1,51 @@
+.menuBurger {
+  width: 2.5rem;
+  height: 50px;
+  /* padding: 0%; */
+}
+@media screen and (max-width:900px) {
+  .menuBurger{
+    height: 40px;
+    width: 2.5rem;
+  }
+}
+@media screen and (min-width:1500px) {
+  .menuBurger{
+    height: 80px;
+    width: 2.5rem;
+  }
+}
+@media screen and (max-width:565px) {
+  .menuBurger{
+    height: 30px;
+    width: 2.5rem;
+  }
+}
+@media screen and (max-width:800px) {
+  .logoReactNavbar{
+width: 8vmax!important;
+  }
+}
+@media screen and (max-width:380px) {
+  .logoReactNavbar{
+width: 8vmax!important;
+  }
+}
+.speedDial {
+  /* border-radius: 100% !important; */
+  vertical-align: middle;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.MuiFab-sizeSmall:hover {
+  background-color: rgb(201, 93, 228) !important;
+  color: white;
+  border-radius: 0%;
+  box-shadow: 7px 7px 2px black;
+  transition: 0.5s all;
+}
+.MuiFab-sizeLarge:hover {
+  transition: 0.5s all !important;
+}

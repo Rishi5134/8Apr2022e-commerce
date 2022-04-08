@@ -1,0 +1,151 @@
+@media screen and (max-width: 890px) {
+  .banner > h1 {
+    font-size: 5vmax !important;
+  }
+  .banner > p {
+    font-size: 3vmax !important;
+  }
+  .banner {
+    /* position: relative; */
+    background-image: linear-gradient(
+      rgb(150 35 180),
+      rgb(201, 79, 233)
+    ) !important;
+    height: 99.5vh !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 3rem; */
+    color: white;
+    /* margin-top: 2rem; */
+  }
+  .banner::after {
+    content: "";
+    width: 100vw;
+    height: 99.8vmax !important;
+    background-color: white;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    clip-path: polygon(100% 90%, 0% 100%, 100% 100%) !important;
+    max-width: 100%;
+  }
+
+  .banner > a > button {
+    height: 70px !important;
+    font-size: 2.5vmax !important;
+  }
+}
+@media screen and (min-height:1400px) {
+  .banner > a > button {
+    height: 10rem !important;
+    font-size: 1.5vmax !important;
+    width: 30rem !important;
+  }
+}
+@media screen and (max-width: 490px) {
+  .featuredProducts-hr {
+    width: 70vw !important;
+  }
+}
+.banner {
+  /* position: relative; */
+  background-image: linear-gradient(rgb(150 35 180), rgb(201, 79, 233));
+  height: 100vh;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  flex-direction: column;
+  /* margin-top: 3rem; */
+  color: white;
+  /* margin-top: 2rem; */
+}
+.banner::after {
+  content: "";
+  width: 100vw;
+  height: 100vmin;
+  background-color: white;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  clip-path: polygon(100% 80%, 0% 100%, 100% 100%);
+
+  max-width: 100%;
+}
+.banner > a > button {
+  color: rgb(150 35 180);
+  background-color: white;
+  width: 202px;
+  height: 60px;
+  transition: 0.3s all;
+  font-size: 1.5vmax;
+  margin:  15px auto;
+}
+.banner > a > button:hover {
+  color: white;
+  background-color: rgb(80, 12, 95);
+  border: 2px solid rgb(18, 1, 22);
+  box-shadow: 15px 15px 5px rgb(80, 12, 95);
+  transition: 0.3s all;
+}
+.banner > p {
+  font-size: 2rem;
+  text-align: center;
+}
+.banner > h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 0px 10px;
+}
+.productCard {
+  height: 25rem;
+  width: 15.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-decoration: none;
+  color: black;
+  margin: 2rem 3rem;
+  transition: 0.3s ease;
+  /* border: 1px solid black; */
+}
+.productCard > img {
+  width: 15rem;
+  height: 20rem;
+  margin: auto;
+  /* top: 0%; */
+}
+.productCard:hover {
+  box-shadow: 5px 5px 5px rgb(150 35 180);
+  color: black;
+  padding-bottom: 1rem;
+  transform: translateY(-1rem);
+}
+#container {
+  display: flex;
+  /* margin: 7px 5rem; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.featured-products {
+  text-align: center;
+  /* border-bottom: 2px solid rgb(150 35 180); */
+  width: 50rem;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.productCard > span {
+  color: rgb(216, 42, 12);
+}
+.featuredProducts-hr {
+  width: 50vw;
+  margin: auto;
+  color: rgb(150 35 180);
+  height: 3px !important;
+  opacity: 1;
+}
